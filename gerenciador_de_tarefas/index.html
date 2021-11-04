@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciador de Tarefas</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script>
+        firebase.initializeApp({
+                apiKey: "AIzaSyAuQyDBbuMZuqKYuV3V8JgiuNT55j3IFvk",
+                authDomain: "gerenciador-de-tarefas-14eae.firebaseapp.com",
+                projectId: "gerenciador-de-tarefas-14eae",
+                storageBucket: "gerenciador-de-tarefas-14eae.appspot.com",
+                messagingSenderId: "139867716276",
+                appId: "1:139867716276:web:2280d2ce9cd126f10a35e1"
+            });
+    </script>
+    <script src="./src/tarefasRepository.js"></script>
+    <script src="./src/gerenciadorTarefas.controller.js"></script>
+</head>
+<body>
+<div>
+<h1>
+    Gerenciando tarefas com Firebase e Cloud
+    <div class="formulario">
+        <input id="descricao" type="text" placeholder="Descrição da Terefa"/>
+        <button onclick="salvar()">Salvar Tarefa</button>
+    </div>
+        <table>
+            <thead>
+            <tr>
+                <th>Descrição</th>
+                <th>Pronta</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+</h1>
+</div>
+</body>
+</html>
