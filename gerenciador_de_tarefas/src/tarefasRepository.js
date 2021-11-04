@@ -24,4 +24,11 @@ class TarefaRepository {
             })
         })
     }
+
+    change = (tarefa) => {
+        return new Promise((resolve, reject) => {
+            this.db.colection('tarefas').update().then()
+        }
+    }
+
 }
